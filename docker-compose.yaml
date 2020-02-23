@@ -1,0 +1,17 @@
+version: "3.1"
+
+services:
+  xero-testdata:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    image: claimer/xero-testdata
+    volumes:
+      - ${XERO_RSA_LOCATION}:/root/.ssh/xero_id_rsa
+      - .:/usr/www/xero-testdata
+    ports:
+      - "1337:1337"
+    environment:
+      XERO_CONSUMER_KEY: "${XERO_CONSUMER_KEY}"
+      XERO_CONSUMER_SECRET: "${XERO_CONSUMER_SECRET}"
+      XERO_RSA_LOCATION: "/root/.ssh/xero_id_rsa"

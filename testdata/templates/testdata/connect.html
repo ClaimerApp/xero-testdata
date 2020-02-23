@@ -1,0 +1,10 @@
+{% include "testdata/head.html" %}
+
+<div class="container text-center pt-5">
+  <h1>Login to Xero</h1>
+  <p>After clicking 'Connect', select the organisation (account) to fill with test data. This is usually the 'Demo Orgnisation'.</p>
+  <p class="text-danger"><strong>Warning:</strong> Ensure you select the correct account, LOTS of test data will be added.</p>
+  <a class="btn btn-primary btn-lg" href="{{ credentials.url }}">Connect</a>
+</div>
+
+{% include "testdata/foot.html" %}

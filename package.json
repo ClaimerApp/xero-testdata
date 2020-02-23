@@ -1,0 +1,16 @@
+{
+  "name": "xero-testdata",
+  "description": "Populate a Xero account with loads of test data.",
+  "scripts": {
+    "dev": "docker-compose run --service-ports xero-testdata"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claimer/xero-testdata.git"
+  },
+  "author": "Adam McCann",
+  "bugs": {
+    "url": "git+https://github.com/claimer/xero-testdata/issues"
+  },
+  "homepage": "git+https://github.com/claimer/xero-testdata#readme"
+}
